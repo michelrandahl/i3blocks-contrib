@@ -1,0 +1,42 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+separator_block_width=15
+
+[cpu_usage]
+label=C: 
+command=/home/michel/.config/i3blocks/cpu_usage/cpu_usage
+interval=3
+min_width=C: 100.00%
+
+[memory]
+label=M: 
+command=/home/michel/.config/i3blocks/memory/memory MemTotal
+interval=5
+min_width=M: 15.5G (100%)
+
+[bandwidth]
+command=/home/michel/.config/i3blocks/bandwidth/bandwidth
+interval=5
+min_width=IN 9999K OUT 9999K
+
+[iface]
+command=/home/michel/.config/i3blocks/iface/iface
+interval=30
+
+[battery]
+label=⚡
+command=/home/michel/.config/i3blocks/battery/battery
+interval=30
+min_width=⚡100%
+
+[time]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1
