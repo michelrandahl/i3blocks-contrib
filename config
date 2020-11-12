@@ -10,11 +10,6 @@
 separator=true
 separator_block_width=15
 
-[data_usage]
-label=DU: 
-command=/home/michel/bin/my-data-gb-month-usage
-interval=60
-
 [cpu_usage]
 label=C: 
 command=/home/michel/.config/i3blocks/cpu_usage/cpu_usage
@@ -35,6 +30,11 @@ min_width=IN 9999K OUT 9999K
 [iface]
 command=/home/michel/.config/i3blocks/iface/iface
 interval=30
+
+[data_usage]
+label=DU: 
+command=/home/michel/bin/my-data-gb-month-usage
+interval=60
 
 [battery]
 label=⚡
